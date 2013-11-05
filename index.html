@@ -45,7 +45,50 @@
       </div>
     </div>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
+	<div id = "myCarousel" class = "carousel slide">
+	
+		<ol class = "carousel-indicators">
+			<li data-target = "myCarousel" data-slide-to = "0" class = "active"></li>
+			<li data-target = "myCarousel" data-slide-to = "1"></li>
+			<li data-target = "myCarousel" data-slide-to = "2"></li>
+		</ol>
+		<div class = "carousel-inner">
+		
+			<div class = "item active">
+				<img src="http://placehold.it/1920x750" alt = "beach" class = "img-responsive">
+				<div class = "carousel-caption">
+					<h2>Slide 0</h2>
+					<p>Add some content here</p>
+				</div>
+			</div>
+			<div class = "item">
+				<img src="http://placehold.it/1920x750" alt = "beach" class = "img-responsive">
+				<div class = "carousel-caption">
+					<h2>Slide 1</h2>
+					<p>Add some content here</p>
+				</div>
+			</div>
+			<div class = "item">
+				<img src="http://placehold.it/1920x750" alt = "beach" class = "img-responsive">
+				<div class = "carousel-caption">
+					<h2>Slide 2</h2>
+					<p>Add some content here</p>
+				</div>
+			</div>
+		
+		</div>
+		
+		<a class = "carousel-control left" href = "#myCarousel" data-slide = "prev">
+			<span class = "icon-prev"></span>
+		</a>
+		<a class = "carousel-control right" href = "#myCarousel" data-slide = "next">
+			<span class = "icon-next"></span>
+		</a>
+	
+	
+	</div>
+
+	<!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
         <h1>Hello World!</h1>
@@ -79,7 +122,8 @@
       <footer>
         <p>&copy; Built by Dave Henri Ghijben 2013</p>
       </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    </div> <!-- /container -->        
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
@@ -92,5 +136,6 @@
             g.src='//www.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
+<script>$(document).ready(function(){$(".carousel").carousel({interval: 5000});});</script>
     </body>
 </html>
