@@ -2,8 +2,15 @@
    Author's custom styles
    ========================================================================== */
 
+.carousel-control.left {
+  background-image: none;
+}
 
-
+.carousel-control.right {
+  right: 0;
+  left: auto;
+  background-image: none;
+}
 
 
 
