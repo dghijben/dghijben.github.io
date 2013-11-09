@@ -2,6 +2,11 @@
    Author's custom styles
    ========================================================================== */
 
+
+
+.navbar-default {
+  opacity: 0.67;
+}
 .carousel-control.left {
   background-image: none;
 }

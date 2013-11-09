@@ -1,0 +1,92 @@
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+  <div class="container">
+    <h1>Hello World!</h1>
+    <p>Add some content</p>
+    <p><a class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+  </div>
+</div>
+
+
+
+<div id = "myCarousel" class = "carousel slide">
+
+	<ol class = "carousel-indicators">
+		<li data-target = "myCarousel" data-slide-to = "0" class = "active"></li>
+		<li data-target = "myCarousel" data-slide-to = "1"></li>
+		<li data-target = "myCarousel" data-slide-to = "2"></li>
+	</ol>
+	<div class = "carousel-inner">
+	
+		<div class = "item active">
+			<img src="http://placehold.it/1920x750" alt = "beach" class = "img-responsive">
+			<div class = "carousel-caption">
+				<h2>Slide 0</h2>
+				<p>Add some content here</p>
+			</div>
+		</div>
+		<div class = "item">
+			<img src="http://placehold.it/1920x750" alt = "beach" class = "img-responsive">
+			<div class = "carousel-caption">
+				<h2>Slide 1</h2>
+				<p>Add some content here</p>
+			</div>
+		</div>
+		<div class = "item">
+			<img src="http://placehold.it/1920x750" alt = "beach" class = "img-responsive">
+			<div class = "carousel-caption">
+				<h2>Slide 2</h2>
+				<p>Add some content here</p>
+			</div>
+		</div>
+	
+	</div>
+	
+	<a class = "carousel-control left" href = "#myCarousel" data-slide = "prev">
+		<span class = "icon-prev"></span>
+	</a>
+	<a class = "carousel-control right" href = "#myCarousel" data-slide = "next">
+		<span class = "icon-next"></span>
+	</a>
+
+
+</div>
+
+<script>$(document).ready(function(){$(".carousel").carousel({interval: 5000});});</script>
+<script>
+  $(document).ready(function() {  
+  		 $("#myCarousel").swiperight(function() {  
+    		  $(this).carousel('prev');  
+	    		});  
+		   $("#myCarousel").swipeleft(function() {  
+		      $(this).carousel('next');  
+	   });  
+	});  
+</script>
+
+
+<div class="bg"></div>
+
+html {
+  height: 100%;
+  overflow: hidden;  
+}
+.bg {
+  position: absolute;
+  top: -2.5%;
+  bottom: -2.5%;
+  left: -2.5%;
+  right: -2.5%;
+  width: 105%;
+  height: 105%;
+  background: 
+	linear-gradient(
+	      rgba(255, 0, 132, 0.45), 
+	      rgba(255, 0, 132, 0.45)
+	    ),
+	url('http://lorempixel.com/400/200/city')no-repeat center center;
+	
+  background-size: cover;
+  -webkit-filter: blur(4px);  
+  z-index:-1
+}
