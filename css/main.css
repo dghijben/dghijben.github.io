@@ -2,28 +2,8 @@
    Author's custom styles
    ========================================================================== */
 
-html {
-  height: 100%;
-  overflow: hidden;  
-}
-.bg {
-  position: absolute;
-  top: -2.5%;
-  bottom: -2.5%;
-  left: -2.5%;
-  right: -2.5%;
-  width: 105%;
-  height: 105%;
-  background: 
-	linear-gradient(
-	      rgba(255, 0, 132, 0.45), 
-	      rgba(255, 0, 132, 0.45)
-	    ),
-	url('http://lorempixel.com/400/200/city')no-repeat center center;
-	
-  background-size: cover;
-  -webkit-filter: blur(4px);  
-  z-index:-1
+body { 
+  padding-top: 70px; 
 }
 
 .navbar-default {
