@@ -70,10 +70,10 @@ p
 
 @-webkit-keyframes slidetounlock {
   0% {
-    background-position: -1000px 0;
+    background-position: -500px 0;
   }
   100%{
-    background-position: 1000px 0;
+    background-position: 500px 0;
   }
 }
 
